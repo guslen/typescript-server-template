@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "pretty": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "removeComments": true,
+    "strict": true,
+    "skipLibCheck": false,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "tests/**/*.ts", "build.ts"]
+}
