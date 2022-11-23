@@ -14,8 +14,6 @@ updates:
       - "dependabot"
     commit-message:
       prefix: "npm"
-    reviewers:
-      - "guslen"
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
@@ -23,5 +21,3 @@ updates:
       day: "wednesday"
     labels:
       - "dependabot"
-    reviewers:
-      - "guslen"
