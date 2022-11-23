@@ -9,13 +9,19 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+      day: "wednesday"
     labels:
       - "dependabot"
     commit-message:
       prefix: "npm"
+    reviewers:
+      - "guslen"
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
       interval: "weekly"
+      day: "wednesday"
     labels:
       - "dependabot"
+    reviewers:
+      - "guslen"
