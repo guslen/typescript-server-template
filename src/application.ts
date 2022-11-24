@@ -1,7 +1,7 @@
 import { helloWorld } from "src/lib/hello";
 
-export async function runApplication() {
-  return helloWorld()
+export function runApplication() {
+  Promise.all([helloWorld()])
     .then(() => {
       console.info("finished execution successfully");
     })
