@@ -1,6 +1,8 @@
 name: CI
 run-name: verifying commit
-on: [ push ]
+on:
+  push:
+    branches-ignore: [ $default-branch ]
 
 jobs:
   lint:
