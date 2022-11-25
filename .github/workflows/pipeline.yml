@@ -1,9 +1,6 @@
 name: CI
 run-name: verifying commit
 on:
-  push:
-    branches-ignore:
-      - '*'
   pull_request:
     branches:
       - 'main'
