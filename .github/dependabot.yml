@@ -14,6 +14,7 @@ updates:
       - "dependabot"
     commit-message:
       prefix: "npm"
+    open-pull-requests-limit: 1
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
@@ -21,3 +22,4 @@ updates:
       day: "wednesday"
     labels:
       - "dependabot"
+    open-pull-requests-limit: 1
