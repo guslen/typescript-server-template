@@ -1,4 +1,4 @@
-FROM node:19.3-alpine as base
+FROM node:19.4-alpine as base
 WORKDIR /app-builder
 COPY package.json .
 COPY package-lock.json .
@@ -17,7 +17,7 @@ CMD ["npm", "run", "lint"]
 FROM base as tester
 CMD ["npm", "run", "test"]
 
-FROM node:19.3-alpine
+FROM node:19.4-alpine
 ENV NODE_ENV production
 WORKDIR /app
 COPY --from=builder /app-builder/index.js /app/index.js
